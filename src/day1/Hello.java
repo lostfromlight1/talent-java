@@ -1,0 +1,22 @@
+package day1;
+
+import java.time.LocalDate;
+import java.util.Scanner;
+
+public class Hello {
+
+    public static void main(String[] args) {
+        Scanner userInput = new Scanner(System.in);
+
+        System.out.print("What is your name: ");
+        String name = userInput.nextLine();
+
+        System.out.println("Hello, World!");
+
+        LocalDate today = LocalDate.now();
+        System.out.println("Name: " + name);
+        System.out.println("Date: " + today);
+
+        userInput.close();
+    }
+}
