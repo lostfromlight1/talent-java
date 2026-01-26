@@ -20,8 +20,8 @@ public class MyAge {
         LocalDate currentDate = LocalDate.now();
         LocalDate birthDate = LocalDate.of(year, month, date);
 
-        int age = Period.between(birthDate, currentDate).getYears();
-        System.out.println("Your current age is: "+ age);
+        int myAge = Period.between(birthDate, currentDate).getYears();
+        System.out.println("Your current age is: "+ myAge);
 
     }
 }

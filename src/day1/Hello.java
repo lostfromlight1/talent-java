@@ -9,14 +9,12 @@ public class Hello {
         Scanner userInput = new Scanner(System.in);
 
         System.out.print("What is your name: ");
-        String name = userInput.nextLine();
+        String myName = userInput.nextLine();
 
         System.out.println("Hello, World!");
 
         LocalDate today = LocalDate.now();
-        System.out.println("Name: " + name);
+        System.out.println("Name: " + myName);
         System.out.println("Date: " + today);
-
-        userInput.close();
     }
 }
