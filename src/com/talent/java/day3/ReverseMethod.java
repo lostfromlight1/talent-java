@@ -7,13 +7,14 @@ public class ReverseMethod {
         Scanner myInput = new Scanner(System.in);
         System.out.print("Enter a word: ");
         String word = myInput.nextLine();
-        System.out.println("Input: "+ word);
-        System.out.println("Result: "+ reverse(word));
+        System.out.println("Input: " + word);
+        System.out.println("Result: " + reverse(word));
         myInput.close();
     }
-    public static String reverse(String input){
+
+    public static String reverse(String input) {
         StringBuilder output = new StringBuilder();
-        for (int i = input.length() - 1; i >= 0; i--){
+        for (int i = input.length() - 1; i >= 0; i--) {
             output.append(input.charAt(i));
         }
         return output.toString();

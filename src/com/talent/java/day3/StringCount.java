@@ -15,33 +15,35 @@ public class StringCount {
         System.out.println("Special characters: " + specialChars);
     }
 
-    public static int countLetter(String input){
+    public static int countLetter(String input) {
         int count = 0;
-        for(int i = 0; i < input.length(); i ++){
+        for (int i = 0; i < input.length(); i++) {
             char ch = input.charAt(i);
-            if(Character.isLetter(ch)){
+            if (Character.isLetter(ch)) {
                 count++;
             }
 
         }
         return count;
     }
-    public static int countDegit(String input){
+
+    public static int countDegit(String input) {
         int count = 0;
-        for(int i = 0; i < input.length(); i ++){
+        for (int i = 0; i < input.length(); i++) {
             char ch = input.charAt(i);
-            if(Character.isDigit(ch)){
+            if (Character.isDigit(ch)) {
                 count++;
             }
 
         }
         return count;
     }
-    public static int countSpecial(String input){
+
+    public static int countSpecial(String input) {
         int count = 0;
-        for(int i = 0; i < input.length(); i ++){
+        for (int i = 0; i < input.length(); i++) {
             char ch = input.charAt(i);
-            if(!Character.isLetter(ch) && !Character.isDigit(ch)){
+            if (!Character.isLetter(ch) && !Character.isDigit(ch)) {
                 count++;
             }
 
