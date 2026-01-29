@@ -1,4 +1,4 @@
-package day2;
+package com.talent.java.day2;
 
 import java.util.Scanner;
 
