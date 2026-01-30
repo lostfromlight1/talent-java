@@ -5,16 +5,28 @@ import java.util.Scanner;
 public class Factorial {
 
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
 
-        System.out.print("Enter a positive integer: ");
-        int n = Integer.parseInt(input.nextLine());
+        try (Scanner input = new Scanner(System.in)) {
+            System.out.print("Enter a positive integer: ");
+            String userInput = input.nextLine();
 
-        if (n < 0) {
-            System.out.println("Factorial is not defined for negative numbers.");
-        } else {
-            long fact = factorial(n);
-            System.out.println(n + "! = " + fact);
+            if (userInput == null || userInput.isEmpty()) {
+                throw new Exception("Input cannot be empty.");
+            }
+
+            int n = Integer.parseInt(userInput);
+
+            if (n < 0) {
+                throw new Exception("Factorial is not defined for negative numbers.");
+            } else {
+                long fact = factorial(n);
+                System.out.println(n + "! = " + fact);
+            }
+
+        } catch (NumberFormatException e) {
+            System.out.println("Invalid input. Please enter a valid integer.");
+        } catch (Exception e) {
+            System.out.println("An unexpected error occurred: " + e.getMessage());
         }
     }
 
