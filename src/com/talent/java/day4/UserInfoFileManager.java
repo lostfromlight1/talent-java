@@ -12,7 +12,7 @@ public class UserInfoFileManager {
         try {
             Scanner input = new Scanner(System.in);
 
-            System.out.print("Enter file name (without extension): ");
+            System.out.print("Enter file name: ");
             String fileName = input.nextLine();
 
             File file = createFile(fileName);
@@ -105,9 +105,6 @@ public class UserInfoFileManager {
         if (!file.exists()) {
             throw new FileNotFoundException("File not found.");
         }
-
-        System.out.println("\n--- File Content ---");
-
         Scanner reader = new Scanner(file);
         while (reader.hasNextLine()) {
             System.out.println(reader.nextLine());
