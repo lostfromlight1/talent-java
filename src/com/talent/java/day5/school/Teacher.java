@@ -3,7 +3,7 @@ package com.talent.java.day5.school;
 
 public class Teacher extends Person {
 
-    private String subject;
+    private final String subject;
 
     public Teacher(String name, int age, String subject) {
         super(name, age);

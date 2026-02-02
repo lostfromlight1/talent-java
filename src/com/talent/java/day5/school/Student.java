@@ -2,7 +2,7 @@ package com.talent.java.day5.school;
 
 public class Student extends Person {
 
-    private int gradeLevel;
+    private final int gradeLevel;
 
     public Student(String name, int age, int gradeLevel) {
         super(name, age);
@@ -14,6 +14,7 @@ public class Student extends Person {
     }
 
     public String getRole() {
+
         return "Student";
     }
 }

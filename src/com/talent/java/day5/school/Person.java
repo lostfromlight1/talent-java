@@ -10,10 +10,12 @@ public class Person {
     }
 
     public void introduce() {
+
         System.out.println("Hi, I'm " + name + " and I'm " + age + " years old.");
     }
 
     public String getRole() {
+
         return "Person";
     }
 }
