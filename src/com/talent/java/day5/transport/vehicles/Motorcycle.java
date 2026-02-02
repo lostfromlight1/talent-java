@@ -4,17 +4,20 @@ public class Motorcycle extends Vehicle {
 
     public Motorcycle(String country, int year, double fuelLevel) {
         super(country, year, fuelLevel);
-        this.vehicleType = "Motorcycle";
+        setVehicleType("Motorcycle");
     }
 
+    @Override
     public void startEngine() {
-        System.out.println("Motorcycle engine start");
+        System.out.println("Motorcycle engine starts: Vroom!");
     }
 
+    @Override
     public void drive() {
-        System.out.println("The motorcycle start driving");
+        System.out.println("The motorcycle is driving. Fuel level: " + getFuelLevel());
     }
 
+    @Override
     public String getVehicleType() {
         return "Motorcycle";
     }

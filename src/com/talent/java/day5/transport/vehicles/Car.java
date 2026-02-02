@@ -4,15 +4,17 @@ public class Car extends Vehicle {
 
     public Car(String country, int year, double fuelLevel) {
         super(country, year, fuelLevel);
-        this.vehicleType = "Car";
+        setVehicleType("Car");
     }
 
+    @Override
     public void startEngine() {
-        System.out.println("Car engine starts");
+        System.out.println("Car engine starts with a roar.");
     }
 
+    @Override
     public void drive() {
-        System.out.println("The car is driving.");
+        System.out.println("The " + getYear() + " car is driving.");
     }
 
     @Override
