@@ -1,6 +1,6 @@
 package com.talent.java.day5.school;
 
-public class Main {
+public class School {
     public static void main(String[] args) {
 
         Person[] people = {
