@@ -17,14 +17,26 @@ public class Vehicle {
         totalVehicles++;
     }
 
-    public String getCountry() { return country; }
-    public void setCountry(String country) { this.country = country; }
+    public String getCountry() {
+        return country;
+    }
+    public void setCountry(String country) {
+        this.country = country;
+    }
 
-    public int getYear() { return year; }
-    public void setYear(int year) { this.year = year; }
+    public int getYear() {
+        return year;
+    }
+    public void setYear(int year) {
+        this.year = year;
+    }
 
-    public double getFuelLevel() { return fuelLevel; }
-    public void setFuelLevel(double fuelLevel) { this.fuelLevel = fuelLevel; }
+    public double getFuelLevel() {
+        return fuelLevel;
+    }
+    public void setFuelLevel(double fuelLevel) {
+        this.fuelLevel = fuelLevel;
+    }
 
     public void startEngine() {
         System.out.println("The vehicle engine starts.");
