@@ -9,12 +9,12 @@ public class Car extends Vehicle {
 
     @Override
     public void startEngine() {
-        System.out.println("Car engine starts with a roar.");
+        System.out.println("Car engine starts.");
     }
 
     @Override
     public void drive() {
-        System.out.println("The " + getYear() + " car is driving.");
+        System.out.println("The car is driving. Fuel level: "+ getFuelLevel());
     }
 
     @Override
