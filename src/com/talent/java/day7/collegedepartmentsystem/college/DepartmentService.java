@@ -41,7 +41,7 @@ public class DepartmentService {
     }
 
     public static void displayAll(Map<String, Set<String>> studentSubjects) {
-        System.out.println("\nDepartment Students and Subjects:");
+        System.out.println("\n--Department Students and Subjects--");
         for (Map.Entry<String, Set<String>> entry : studentSubjects.entrySet()) {
             System.out.println(entry.getKey() + " - " + entry.getValue());
         }
